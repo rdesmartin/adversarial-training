@@ -1,4 +1,4 @@
-from ...src import train
+from train import train
 from tensorflow.keras import layers
 from tensorflow import keras
 import tensorflow as tf
@@ -21,8 +21,8 @@ if __name__ == '__main__':
     epochs = 50
     batch_size = 64
     pgd_steps = 5
-    alpha = 1
-    beta = 1
+    alpha = 0.7
+    beta = 0.3
     eps_multiplier = 1000
     from_logits = True
 
